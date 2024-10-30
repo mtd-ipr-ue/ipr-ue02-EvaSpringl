@@ -1,4 +1,3 @@
-import libraries.Out;
 import java.util.Scanner;
 
 public class ue02_3 {
