@@ -15,7 +15,7 @@ public class ue02_3 {
 
         if (isInCircle) {
             System.out.println("The point (" + x + ", " + y + ") is within the circle.");
-        }else{
+        } else {
             System.out.println("The point (" + x + ", " + y + ") is NOT within the circle.");
         }
         }
