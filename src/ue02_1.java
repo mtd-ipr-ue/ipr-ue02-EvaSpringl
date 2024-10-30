@@ -23,7 +23,7 @@ public class ue02_1 {
             if (number3 > maxValue) {
                 maxValue = number3;
             }
-
+            // output of the biggest number
             System.out.println("The biggest number is: " + maxValue);
         }
 
