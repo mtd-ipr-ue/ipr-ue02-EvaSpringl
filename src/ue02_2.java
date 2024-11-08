@@ -3,14 +3,34 @@ import java.util.Scanner;
 public class ue02_2 {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
+            int year;
+            int month;
 
-            // User input for year
-            System.out.println("Please enter the year:");
-            int year = scanner.nextInt();
-            // User input for month
-            System.out.println("Please enter a value for the month between 1 and 12:");
-            int month = scanner.nextInt();
-            // User input for days
+            // User input for year, ensure year is not negative
+            while (true) {
+                System.out.println("Please enter the year:");
+                year = scanner.nextInt();
+
+                if (year >= 0) {
+                    break;
+                } else {
+                    System.out.println("Error: year cannot be negative. Please try again.");
+                }
+            }
+
+            // User input for month, ensure value for month is between 1 and 12
+            while (true) {
+                System.out.println("Please enter a value for the month between 1 and 12:");
+                month = scanner.nextInt();
+
+                if (month >= 1 && month <= 12) {
+                    break;
+                } else {
+                    System.out.println("Error: month must be between 1 and 12. Please try again!");
+                }
+            }
+
+            // calculate days in the chosen month
             int days = daysInMonth(month, year);
 
             if (days == 0) {
